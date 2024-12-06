@@ -1,30 +1,25 @@
-<!-- ClassePage.vue (Composant parent) -->
 <template>
     <div>
-        <h1>Liste des classes</h1>
-        <ul>
-        <li v-for="(classe, index) in classes" :key="index">
-            <!-- Lien vers les pages spécifiques de chaque classe -->
-            <router-link :to="'/classe/' + classe.slug">{{ classe.name }}</router-link>
+      <h1>Liste des classes</h1>
+      <ul>
+        <li v-for="classe in classes" :key="classe.slug">
+          <router-link :to="'/classe/' + classe.slug">{{
+            classe.title
+          }}</router-link>
         </li>
-        </ul>
-    
-        <!-- Le composant enfant (ClasseDetails) sera rendu ici selon le slug -->
-        <router-view />
+      </ul>
     </div>
-    </template>
-    
-    <script>
-    export default {
+  </template>
+  
+  <script>
+  import { classes } from '../data/classes.js';
+  
+  export default {
     data() {
-        return {
-        // Exemple de classes avec des slugs uniques
-        classes: [
-            { name: 'Ma classe', slug: 'ma-classe' },
-            { name: 'Classe avancée', slug: 'classe-avancee' },
-            { name: 'Classe débutante', slug: 'classe-debutante' },
-        ],
-        };
+      return {
+        classes,
+      };
     },
-    };
-    </script>
+  };
+  </script>
+  
