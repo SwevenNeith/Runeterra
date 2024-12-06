@@ -9,7 +9,7 @@ export default {
       type: String,
       required: true,
     },
-    list: {
+    voie: {
       type: Array,
       required: false, // Rend cette prop facultative
       default: () => [], // Valeur par défaut : tableau vide
@@ -23,8 +23,8 @@ export default {
     <h1>{{ classe }}</h1>
     <p>{{ content }}</p>
     <ul>
-      <li v-for="(item, index) in list" :key="index">
-        {{ item }}
+      <li v-for="(compétence, index) in voie" :key="index">
+        {{ compétence }}
       </li>
     </ul>
   </div>
