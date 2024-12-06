@@ -1,9 +1,11 @@
 <script setup></script>
 
 <template>
-  <router-view />
   <a href="/">Home</a>
   <a href="/account">Account</a>
+  <a href="/classe">Classes</a>
+  <router-view />
+  <!---->
 </template>
 
 <style>
