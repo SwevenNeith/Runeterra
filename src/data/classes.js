@@ -1,34 +1,21 @@
-import { voies } from './voies.js';
-
+// data/classes.js
 export const classes = [
   {
     slug: 'ma-classe',
-    title: 'Ma classe',
+    name: 'Ma Classe',
     description: 'Description de ma classe.',
-    voies: ['voie-force', 'voie-agilite'], // Slugs des voies associées
+    voies: ['voie-initiation', 'voie-avancee'], // Slugs des voies
   },
   {
     slug: 'classe-avancee',
-    title: 'Classe avancée',
+    name: 'Classe Avancée',
     description: 'Description de la classe avancée.',
-    voies: ['voie-sagesse', 'voie-mystique'],
+    voies: ['voie-elite'], // Slugs des voies
   },
   {
-    slug: 'classe-debutante',
-    title: 'Classe débutante',
-    description: 'Description pour les débutants.',
-    voies: ['voie-initiation'],
+    slug: 'classe-avancee2',
+    name: 'Classe Avancée2',
+    description: 'Description de la classe avancée.',
+    voies: ['voie-elite'], // Slugs des voies
   },
 ];
-
-// Fonction pour obtenir les données complètes d'une classe avec ses voies
-export function getClassWithVoies(slug) {
-  const classe = classes.find((c) => c.slug === slug);
-  if (!classe) return null;
-
-  const voiesDetails = classe.voies.map((slug) =>
-    voies.find((voie) => voie.slug === slug)
-  );
-
-  return { ...classe, voies: voiesDetails };
-}
