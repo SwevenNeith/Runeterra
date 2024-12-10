@@ -32,7 +32,7 @@
     padding: 20px; /* Ajoute un peu d'espace autour de la galerie */
   
     /* Assure que la galerie est centrée sur la page */
-    max-width: 3000px; /* Limite la largeur max de la galerie */
+    max-width: 3000px; /* Limite la largeur max de la galerie  TO CHANGE MAYBE % */
     margin: 0 auto; /* Centrage horizontal */
     width: 122%; /* Utilise 100% de l'espace disponible pour l'élément parent */
     box-sizing: border-box; /* Inclut les paddings et marges dans la largeur totale */
