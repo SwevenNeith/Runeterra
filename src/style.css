@@ -1,90 +1,49 @@
+/* Global styles - style.css */
 :root {
-    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif; /* Définit la police par défaut pour tout le document */
-    line-height: 1.5; /* Définit l'interligne par défaut */
-    font-weight: 400; /* Définit l'épaisseur de police par défaut */
-  
-    color-scheme: light dark; /* Active la prise en charge des thèmes clair/sombre */
-    color: rgba(
-      255,
-      255,
-      255,
-      0.87
-    ); /* Définit la couleur du texte par défaut (blanc légèrement transparent) */
-    background-color: #242424; /* Définit la couleur de fond par défaut (gris foncé) */
-  
-    font-synthesis: none; /* Désactive la synthèse automatique de styles de police (gras, italique) */
-    text-rendering: optimizeLegibility; /* Améliore la lisibilité du texte pour les polices de grande taille */
-    -webkit-font-smoothing: antialiased; /* Lisse les polices sur les navigateurs WebKit */
-    -moz-osx-font-smoothing: grayscale; /* Lisse les polices sur macOS */
-  }
-  
-  /* Style pour le contenu principal sous le header */
-  .content {
-    margin-top: 35px; /* Adapte cette valeur à la hauteur de ton header */
-    padding: 20px; /* Optionnel : ajouter un peu de padding autour du contenu */
-    text-align: left; /* Aligner le contenu à gauche (ou autre selon besoin) */
-  }
-  
-  a {
-    font-weight: 500; /* Définit l'épaisseur de police pour les liens */
-    color: #646cff; /* Définit la couleur par défaut des liens */
-    text-decoration: inherit; /* Les liens héritent du style de décoration du texte (par ex., soulignement) */
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  min-width: 320px;
+  min-height: 100vh;
+  overflow-x: hidden;
+  font-family: inherit;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  min-height: 100vh;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #000000; /* Couleur de l'écriture*/
+    background-color: #ffffff; /*Couleur du backgorund de l'app*/
   }
   a:hover {
-    color: #535bf2; /* Change la couleur du lien lorsque la souris est dessus */
+    color: #747bff;
   }
-  
-  body {
-    margin: 0; /* Supprime les marges par défaut du corps */
-    display: flex; /* Utilise un modèle de boîte flexible pour organiser les enfants */
-    min-width: 320px; /* Définit une largeur minimale pour le corps */
-    min-height: 100vh; /* Définit une hauteur minimale correspondant à la hauteur de la fenêtre */
-  }
-  
-  h1 {
-    font-size: 3.2em; /* Définit une grande taille pour les titres de niveau 1 */
-    line-height: 1.1; /* Définit un interligne compact pour les titres */
-  }
-  
   button {
-    border-radius: 8px; /* Ajoute des bords arrondis aux boutons */
-    border: 1px solid transparent; /* Définit une bordure transparente par défaut */
-    padding: 0.6em 1.2em; /* Ajoute de l'espace à l'intérieur des boutons (vertical/horizontal) */
-    font-size: 1em; /* Définit une taille de police normale pour les boutons */
-    font-weight: 500; /* Définit l'épaisseur de police pour les boutons */
-    font-family: inherit; /* Les boutons héritent de la police définie dans :root */
-    background-color: #1a1a1a; /* Définit un fond sombre pour les boutons */
-    cursor: pointer; /* Affiche un curseur en forme de main pour les boutons */
-    transition: border-color 0.25s; /* Ajoute une transition fluide pour la bordure */
+    background-color: #f9f9f9;
   }
-  button:hover {
-    border-color: #646cff; /* Change la couleur de la bordure lorsque la souris est dessus */
-  }
-  button:focus,
-  button:focus-visible {
-    outline: 4px auto -webkit-focus-ring-color; /* Met en évidence le bouton lorsque l'utilisateur le sélectionne */
-  }
-  
-  .card {
-    padding: 2em; /* Ajoute un espace intérieur autour des éléments avec la classe "card" */
-  }
-  
-  #app {
-    max-width: 1280px; /* Définit une largeur maximale pour l'application */
-    margin: 0; /* Centre horizontalement l'application dans la fenêtre */
-    text-align: left; /* Centre le texte à l'intérieur de l'application */
-  }
-  
-  @media (prefers-color-scheme: light) {
-    :root {
-      color: #213547; /* Définit une couleur de texte sombre pour le mode clair */
-      background-color: #ffffff; /* Définit un fond blanc pour le mode clair */
-    }
-    a:hover {
-      color: #747bff; /* Change la couleur des liens au survol en mode clair */
-    }
-    button {
-      background-color: #f9f9f9; /* Définit un fond clair pour les boutons en mode clair */
-    }
-  }
-  
+}

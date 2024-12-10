@@ -22,5 +22,8 @@ main {
   margin-top: 60px;
   padding: 20px;
   box-sizing: border-box; /* S'assurer que le padding et margin sont bien gérés */
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden; /* Éviter tout débordement horizontal */
 }
 </style>
