@@ -7,7 +7,7 @@ export const classes = [
       'Un expert des arts magiques, capable de manipuler les arcanes pour créer des effets destructeurs ou défensifs. Axé sur le contrôle de la magie, il excelle dans les sorts a longue portée, les contrôles de zone et les buffs stratégiques.',
     caracteristiques: ['INTELLIGENCE'],
     voies: [
-      'catalyseur-d-ether',
+      'catalyseur-d-éther',
       'géomancien-élémentaire',
       'graveur-de-runes',
       'maitre-des-arcanes',
@@ -42,7 +42,13 @@ export const classes = [
     description:
       "Un combattant discret et agile, habitué à survivre dans la nature. Spécialiste de la furtivité et de l'adaption, il excelle dans les embuscades, la reconnaissance et les attaques à distance.",
     caracteristiques: ['DEXTERITE', 'SAGESSE'],
-    voies: ['voie-sagesse'], // Liste des slugs des voies associées à la classe
+    voies: [
+      'chasseur-de-prime',
+      'maitre-des-bêtes',
+      'tireur-embusqué',
+      'marcheur-sylvestre',
+      'éclaireur-implacable',
+    ], // Liste des slugs des voies associées à la classe
   },
   // Ajouter d'autres classes selon besoin
 ];

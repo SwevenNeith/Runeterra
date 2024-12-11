@@ -18,14 +18,23 @@
             <span v-if="competence.level">
               <strong>Niveau :</strong> {{ competence.level }}
             </span>
+            <span v-if="competence.effet1">
+              <strong>1 :</strong> {{ competence.effet1 }}
+            </span>
+            <span v-if="competence.effet2">
+              <strong>2 :</strong> {{ competence.effet2 }}
+            </span>
+            <span v-if="competence.effet3">
+              <strong>3 :</strong> {{ competence.effet3 }}
+            </span>
             <span v-if="competence.damage">
               <strong>Dégâts :</strong> {{ competence.damage }}
             </span>
-            <span v-if="competence.bonus">
-              <strong>Bonus :</strong> {{ competence.bonus }}
+            <span v-if="competence.alliés">
+              <strong>Alliés :</strong> {{ competence.alliés }}
             </span>
-            <span v-if="competence.malus">
-              <strong>Malus :</strong> {{ competence.malus }}
+            <span v-if="competence.ennemis">
+              <strong>Ennemis :</strong> {{ competence.ennemis }}
             </span>
             <span v-if="competence.support">
               <strong>Jet de Sauvegarde :</strong> {{ competence.sauvegarde }}
