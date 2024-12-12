@@ -1,4 +1,5 @@
 // data/classes.js
+import ArcanisteImage from '../assets/classes/Arcaniste.png';
 export const classes = [
   {
     slug: 'arcaniste',
@@ -13,6 +14,7 @@ export const classes = [
       'maitre-des-arcanes',
       'maitre-des-reflets',
     ], // Liste des slugs des voies associées à la classe
+    image: ArcanisteImage,
   },
   {
     slug: 'mercenaire',
@@ -21,6 +23,7 @@ export const classes = [
       'Un combattant brutal et sans pitié. Habitué aux guerres et aux batailles sanglantes, il est une force de destruction.',
     caracteristiques: ['FORCE', 'CONSTITUTION'],
     voies: ['voie-sagesse'], // Liste des slugs des voies associées à la classe
+    image: '',
   },
   {
     slug: 'scientifique',
@@ -35,6 +38,7 @@ export const classes = [
       'physicien-énergétique',
       'transmutateur-visionnaire',
     ], // Liste des slugs des voies associées à la classe
+    image: '',
   },
   {
     slug: 'traqueur',
@@ -49,6 +53,7 @@ export const classes = [
       'marcheur-sylvestre',
       'éclaireur-implacable',
     ], // Liste des slugs des voies associées à la classe
+    image: '',
   },
   // Ajouter d'autres classes selon besoin
 ];
