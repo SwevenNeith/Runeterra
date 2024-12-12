@@ -29,7 +29,7 @@ export const classes = [
       'frappeur-des-lignes',
       'ravageur',
     ], // Liste des slugs des voies associées à la classe
-    image: '',
+    image: ArcanisteImage,
   },
   {
     slug: 'scientifique',
@@ -44,7 +44,7 @@ export const classes = [
       'physicien-énergétique',
       'transmutateur-visionnaire',
     ], // Liste des slugs des voies associées à la classe
-    image: '',
+    image: ArcanisteImage,
   },
   {
     slug: 'traqueur',
@@ -59,7 +59,7 @@ export const classes = [
       'marcheur-sylvestre',
       'tireur-embusqué',
     ], // Liste des slugs des voies associées à la classe
-    image: '',
+    image: ArcanisteImage,
   },
   // Ajouter d'autres classes selon besoin
 ];
