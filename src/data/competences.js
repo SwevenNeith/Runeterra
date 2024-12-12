@@ -43,6 +43,63 @@ export const competences = [
     voie: 'marcheur-sylvestre', // Correspond au slug de la voie
   },
   {
+    slug: 'frappe-agile',
+    name: 'Frappe Agile',
+    description:
+      'Le Mercenaire attaque tout en se déplaçant rapidement, perturbant son adversaire.',
+    level: '1',
+    damage: '1d6 DM',
+    alliés: "Peut se déplacer de 3 mètres avant ou après l'attaque",
+    ennemis: '-2 DEX',
+    sauvegarde: '',
+    range: 'Au contact',
+    duration: '',
+    voie: 'ravageur', // Correspond au slug de la voie
+  },
+  {
+    slug: 'griffes-primitives',
+    name: 'Griffes Primitives',
+    description:
+      'Le Mercenaire frappe avec une violence animale, infligeant des dégâts accrus au corps à corps.',
+    level: '1',
+    damage:
+      '1d8 DM + 1d6 DM supplémentaire si la cible a agit avant le Mercenaire',
+    alliés: '',
+    ennemis: '',
+    sauvegarde: '',
+    range: 'Au contact',
+    duration: '',
+    voie: 'briseur', // Correspond au slug de la voie
+  },
+  {
+    slug: 'hache-tourbillonnante',
+    name: 'Hache Tourbillonnante',
+    description:
+      'Le Mercenaire fait tournoyer son arme autour de lui, frappant tous les ennemis proches.',
+    level: '1',
+    damage: '2d6 DM',
+    alliés: '',
+    ennemis: '',
+    sauvegarde: '',
+    range: '3 mètres',
+    duration: '',
+    voie: 'fléau-des-batailles', // Correspond au slug de la voie
+  },
+  {
+    slug: 'impact-brisé',
+    name: 'Impact Brisé',
+    description:
+      'Le Mercenaire frappe une cible avec une force massive, perturbant sa position et ses défenses.',
+    level: '1',
+    damage: '1d8 DM',
+    alliés: '',
+    ennemis: '',
+    sauvegarde: "-1 CA jusqu'à la fin du prochain tour",
+    range: '',
+    duration: '',
+    voie: 'frappeur-des-lignes', // Correspond au slug de la voie
+  },
+  {
     slug: 'instinct-sauvage',
     name: 'Instinct Sauvage',
     description:
@@ -142,6 +199,20 @@ export const competences = [
     range: 'Au contact',
     duration: "[1 + Mod d'INT] tours",
     voie: 'biologiste-mutagène', // Correspond au slug de la voie
+  },
+  {
+    slug: 'rage-sauvage',
+    name: 'Rage Sauvage',
+    description:
+      'Le Mercenaire canalise sa rage pour frapper avec une force accrue, mais perd en précision.',
+    level: '1',
+    damage: '',
+    alliés: '+2 DM, +2 FOR et -1 DEX',
+    ennemis: '',
+    sauvegarde: '',
+    range: '',
+    duration: '[1 + Mod de CON] tours',
+    voie: 'berserker', // Correspond au slug de la voie
   },
   {
     slug: 'rayon-éthéré',
@@ -348,6 +419,20 @@ export const competences = [
     voie: 'biologiste-mutagène', // Correspond au slug de la voie
   },
   {
+    slug: 'cri-de-guerre',
+    name: 'Cri de Guerre',
+    description:
+      'Le Mercenaire pousse un cri puissant qui motive ses alliés et déstabilise ses ennemis.',
+    level: '2',
+    damage: '',
+    alliés: '+2 FOR',
+    ennemis: '',
+    sauvegarde: '',
+    range: '6 mètres',
+    duration: '[1 + Mod de FOR] tours',
+    voie: 'frappeur-des-lignes', // Correspond au slug de la voie
+  },
+  {
     slug: 'éclat-amplifié',
     name: 'Eclat Amplifié',
     description:
@@ -360,6 +445,21 @@ export const competences = [
     range: 'Au contact',
     duration: "[1 + Mod d'INT] tours",
     voie: 'maitre-des-reflets', // Correspond au slug de la voie
+  },
+  {
+    slug: 'esquive-réflexe',
+    name: 'Esquive Réflexe',
+    description:
+      'Le Mercenaire utilise ses réflexes aiguisés pour éviter les attaques ennemies.',
+    level: '2',
+    damage: '',
+    alliés:
+      "+2 CA et peut se déplacer de 3 mètres immédiatement sans provoquer d'attaque d'opportunité si une attaque ennemie échoue contre lui",
+    ennemis: '',
+    sauvegarde: '',
+    range: '',
+    duration: '[1 + Mod de CON] tours',
+    voie: 'ravageur', // Correspond au slug de la voie
   },
   {
     slug: 'flèche-de-ronce',
@@ -405,6 +505,19 @@ export const competences = [
     voie: 'chimiste-toxique', // Correspond au slug de la voie
   },
   {
+    slug: 'hurlement-sauvage',
+    name: 'Hurlement Sauvage',
+    description: 'Un cri animal qui déstabilise les ennemis proches.',
+    level: '2',
+    damage: '',
+    alliés: 'Regagnent 1d6 PV',
+    ennemis: '',
+    sauvegarde: 'SAG ou -2 FOR',
+    range: '6 mètres',
+    duration: '',
+    voie: 'briseur', // Correspond au slug de la voie
+  },
+  {
     slug: 'piège-camouflé',
     name: 'Piège Camouflé',
     description:
@@ -431,6 +544,34 @@ export const competences = [
     range: '',
     duration: '[1 + Mod de DEX] tours',
     voie: 'éclaireur-implacable', // Correspond au slug de la voie
+  },
+  {
+    slug: 'présence-intimidante',
+    name: 'Présence Intimidante',
+    description:
+      'La posture imposante et menaçante du Mercenaire déstabilise les ennemis à proximité.',
+    level: '2',
+    damage: '',
+    alliés: '',
+    ennemis: '',
+    sauvegarde: 'SAG ou -2 DEX pendant toute la durée',
+    range: '6 mètres',
+    duration: '[1+ Mod de FOR] tours',
+    voie: 'fléau-des-batailles', // Correspond au slug de la voie
+  },
+  {
+    slug: 'rugissement-intimidant',
+    name: 'Rugissement Intimidant',
+    description:
+      'Le Mercenaire pousse un cri primal, déstabilisant ses ennemis proches.',
+    level: '2',
+    damage: '',
+    alliés: '',
+    ennemis: '',
+    sauvegarde: "SAG ou -2 aux jets d'attaque",
+    range: '6 mètres',
+    duration: '',
+    voie: 'berserker', // Correspond au slug de la voie
   },
   {
     slug: 'rune-de-renforcement',
@@ -476,6 +617,35 @@ export const competences = [
     range: '10 mètres autour de lui',
     duration: "[1 + Mod d'INT] tours",
     voie: 'transmutateur-visionnaire', // Correspond au slug de la voie
+  },
+  {
+    slug: 'balayage-circulaire',
+    name: 'Balayage Circulaire',
+    description:
+      'Le Mercenaire effectue un large mouvement avec son arme pour attaquer tous les ennemis proches.',
+    level: '3',
+    damage: '2d6 DM',
+    alliés: '',
+    ennemis: '',
+    sauvegarde:
+      "Si elles sont touchées : DEX ou -2 DEX jusqu'à la fin du prochain tour",
+    range: 'Toutes les cibles dans un rayon de 3 mètres',
+    duration: '',
+    voie: 'ravageur', // Correspond au slug de la voie
+  },
+  {
+    slug: 'charge-dévastatrice',
+    name: 'Charge Dévastatrice',
+    description:
+      'Le Mercenaire fonce sur une cible, la renversant avec une force brutale.',
+    level: '3',
+    damage: '2d6 DM',
+    alliés: '',
+    ennemis: '',
+    sauvegarde: 'FOR ou être projeté à 3 mètres et tomber à terre',
+    range: '8 mètres',
+    duration: '',
+    voie: 'berserker', // Correspond au slug de la voie
   },
   {
     slug: 'explosion-énergétique',
@@ -560,6 +730,34 @@ export const competences = [
     voie: 'inventeur-chimiste', // Correspond au slug de la voie
   },
   {
+    slug: 'onde-de-choc',
+    name: 'Onde de Choc',
+    description:
+      "Le Mercenaire frappe le sol ou une cible avec une force énorme, libérant une onde d'énergie brutale.",
+    level: '3',
+    damage: '2d6 DM',
+    alliés: '',
+    ennemis: '',
+    sauvegarde: 'DEX ou être projetés à 3 mètres',
+    range: 'Un cône de 6 mètres',
+    duration: '',
+    voie: 'fléau-des-batailles', // Correspond au slug de la voie
+  },
+  {
+    slug: 'percée-brisée',
+    name: 'Percée Brisée',
+    description:
+      'Le Mercenaire charge en ligne droite, renversant les ennemis sur son passage.',
+    level: '3',
+    damage: '3d6 DM à chaque ennemis touchés',
+    alliés: '',
+    ennemis: '',
+    sauvegarde: 'FOR ou projetés de 3 mètres et tomber à terre',
+    range: '8 mètres en ligne droite',
+    duration: '',
+    voie: 'frappeur-des-lignes', // Correspond au slug de la voie
+  },
+  {
     slug: 'prisme-énergétique',
     name: 'Prisme Energétique',
     description:
@@ -601,6 +799,20 @@ export const competences = [
     range: 'Au contact',
     duration: "[1 + Mod d'INT] tours",
     voie: 'maitre-des-arcanes', // Correspond au slug de la voie
+  },
+  {
+    slug: 'résilience-sauvage',
+    name: 'Résilience Sauvage',
+    description:
+      'Le Mercenaire, porté par son instinct, devient temporairement insensible à la douleur et résiste mieux aux attaques ennemies.',
+    level: '3',
+    damage: '',
+    alliés: '-2 DM aux dégâts subis et regagne 1d8 PV si une attaque est > 8M',
+    ennemis: '',
+    sauvegarde: '',
+    range: '',
+    duration: '[1 + Mod de CON] tours',
+    voie: 'briseur', // Correspond au slug de la voie
   },
   {
     slug: 'rune-d-énergie',
@@ -673,6 +885,20 @@ export const competences = [
     range: "4 mètres autour d'un point visible",
     duration: '[1 + Mod de SAG] tours',
     voie: 'marcheur-sylvestre', // Correspond au slug de la voie
+  },
+  {
+    slug: 'bond-sauvage',
+    name: 'Bond Sauvage',
+    description:
+      "Le Mercenaire bondit avec force sur une cible, l'écrasant au sol.",
+    level: '4',
+    damage: '3d6 DM',
+    alliés: '',
+    ennemis: '',
+    sauvegarde: "FOR ou étourdie (n'agit pas) jusqu'au prochain tour",
+    range: '6 mètres',
+    duration: '',
+    voie: 'briseur', // Correspond au slug de la voie
   },
   {
     slug: 'brume-mortelle',
@@ -760,6 +986,35 @@ export const competences = [
     voie: 'éclaireur-implacable', // Correspond au slug de la voie
   },
   {
+    slug: 'frappe-dominante',
+    name: 'Frappe Dominante',
+    description:
+      "Une attaque puissante qui cible un point précis pour désorganiser un groupe d'ennemis.",
+    level: '4',
+    damage: '3d6 DM',
+    alliés: '',
+    ennemis: '-2 FOR pendant toute la durée',
+    sauvegarde: '',
+    range: "4 mètres autour d'un point visible",
+    duration: '[1 + Mod de FOR] tours',
+    voie: 'frappeur-des-lignes', // Correspond au slug de la voie
+  },
+  {
+    slug: 'furie-inarrêtable',
+    name: 'Furie Inarrêtable',
+    description:
+      'Le Mercenaire entre dans une rage incontrôlable, devenant plus puissant à chaque coup porté.',
+    level: '4',
+    damage: '',
+    alliés:
+      "+1 DM cumulatif pour chaque attaques réussies (pouvant aller jusqu'à +4 DM). En raison de l'effort, il subit 1d4 DM à la fin de chaque tour",
+    ennemis: '',
+    sauvegarde: '',
+    range: '',
+    duration: '[1 + Mod de CON] tours',
+    voie: 'berserker', // Correspond au slug de la voie
+  },
+  {
     slug: 'générateur-d-interférence',
     name: "Générateur d'Interférence",
     description:
@@ -819,6 +1074,20 @@ export const competences = [
     voie: 'physicien-énergétique', // Correspond au slug de la voie
   },
   {
+    slug: 'percée-tactique',
+    name: 'Percée Tactique',
+    description:
+      'Le Mercenaire utilise son agilité pour traverser les lignes ennemies et attaquer une cible vulnérable.',
+    level: '4',
+    damage: '2d8 DM',
+    alliés: "Se déplace jusqu'à 6 mètres ignorant les attaques d'opportunité",
+    ennemis: '-2 CA pendant la durée si la cible est isolée',
+    sauvegarde: '',
+    range: 'Au contact',
+    duration: '[Mod de FOR] tours',
+    voie: 'ravageur', // Correspond au slug de la voie
+  },
+  {
     slug: 'réverbération-magique',
     name: 'Réverbération Magique',
     description: "Amplifie les effets d'un sort pour en maximiser l'impact.",
@@ -844,6 +1113,20 @@ export const competences = [
     range: '15 mètres',
     duration: '',
     voie: 'tireur-embusqué', // Correspond au slug de la voie
+  },
+  {
+    slug: 'souffle-de-carnage',
+    name: 'Souffle de Carnage',
+    description:
+      'Le Mercenaire entre dans un état frénétique, augmentant sa vitesse et sa force pour infliger des dégâts dévastateurs.',
+    level: '4',
+    damage: '',
+    alliés: '+2 DM et +2 FOR',
+    ennemis: '',
+    sauvegarde: '',
+    range: '',
+    duration: '[1 + Mod de FOR] tours',
+    voie: 'fléau-des-batailles', // Correspond au slug de la voie
   },
   {
     slug: 'surcharge-d-énergie',
@@ -911,6 +1194,20 @@ export const competences = [
     voie: 'maitre-des-bêtes', // Correspond au slug de la voie
   },
   {
+    slug: 'avatar-de-la-bête',
+    name: 'Avatar de la Bête',
+    description:
+      "Le Mercenaire canalise l'énergie d'une bête intérieure augmentant sa force et sa brutalité pour anéantir ses ennemis.",
+    level: '5',
+    damage: '1d6 aux ennemis adjacents à la cible',
+    alliés: '+2 DM, -5 DM subis par une attaque ennemie',
+    ennemis: '',
+    sauvegarde: '',
+    range: '',
+    duration: '[1 + Mod de CON] tours',
+    voie: 'briseur', // Correspond au slug de la voie
+  },
+  {
     slug: 'cascade-lumineuse',
     name: 'Cascade Lumineuse',
     description:
@@ -953,6 +1250,35 @@ export const competences = [
     voie: 'chasseur-de-prime', // Correspond au slug de la voie
   },
   {
+    slug: 'danse-de-guerre',
+    name: 'Danse de Guerre',
+    description:
+      'Le Mercenaire entre dans un état de combat frénétique, se déplaçant rapidement entre plusieurs cibles pour infliger des dégâts dévastateurs.',
+    level: '5',
+    damage: '3d8 DM',
+    alliés: '',
+    ennemis: '',
+    sauvegarde: '',
+    range:
+      "Jusqu'à 3 cibles dans un rayon de 10 mètres se déplaçant de 3 mètres entre chaque",
+    duration: '',
+    voie: 'ravageur', // Correspond au slug de la voie
+  },
+  {
+    slug: 'dévastation-de-masse',
+    name: 'Dévastation de Masse',
+    description:
+      'Le Mercenaire libère toute sa puissance dans une attaque massive, brisant les lignes ennemis en un seul coup.',
+    level: '5',
+    damage: '4d10 DM',
+    alliés: '',
+    ennemis: '-2 CA pendant toute la durée',
+    sauvegarde: '',
+    range: 'Un cône de 6 mètres',
+    duration: '[1 + Mod de FOR] tours',
+    voie: 'frappeur-des-lignes', // Correspond au slug de la voie
+  },
+  {
     slug: 'esprit-sylvestre',
     name: 'Esprit Sylvestre',
     description:
@@ -965,6 +1291,35 @@ export const competences = [
     range: "10 mètres pour l'entité",
     duration: '[2 + Mod de SAG] tours',
     voie: 'marcheur-sylvestre', // Correspond au slug de la voie
+  },
+  {
+    slug: 'frappe-de-la-fureur',
+    name: 'Frappe de la Fureur',
+    description:
+      'Canalise toute la rage accumulée en une attaque dévastatrice qui écrase tout sur son passage.',
+    level: '5',
+    damage: '4d10 DM',
+    alliés: '',
+    ennemis:
+      "Toutes les cibles dans un rayon de 3 mètres de la première subissent 2d8 DM à cause de l'onde de choc générée par l'attaque",
+    sauvegarde: '',
+    range: '',
+    duration: '10 mètres',
+    voie: 'berserker', // Correspond au slug de la voie
+  },
+  {
+    slug: 'jugement-sanglant',
+    name: 'Jugement Sanglant',
+    description:
+      'Le Mercenaire libère toute sa rage et sa puissance dans une attaque massive qui frappe tous les ennemis à portée.',
+    level: '5',
+    damage: '4d10 DM à toutes les cibles dans la zone',
+    alliés: '',
+    ennemis: '',
+    sauvegarde: '',
+    range: '',
+    duration: '5 mètres autour de lui',
+    voie: 'fléau-des-batailles', // Correspond au slug de la voie
   },
   {
     slug: 'maîtrise-de-la-traque',

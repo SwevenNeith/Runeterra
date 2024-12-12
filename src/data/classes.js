@@ -22,7 +22,13 @@ export const classes = [
     description:
       'Un combattant brutal et sans pitié. Habitué aux guerres et aux batailles sanglantes, il est une force de destruction.',
     caracteristiques: ['FORCE', 'CONSTITUTION'],
-    voies: ['voie-sagesse'], // Liste des slugs des voies associées à la classe
+    voies: [
+      'berserker',
+      'briseur',
+      'fléau-des-batailles',
+      'frappeur-des-lignes',
+      'ravageur',
+    ], // Liste des slugs des voies associées à la classe
     image: '',
   },
   {
@@ -48,10 +54,10 @@ export const classes = [
     caracteristiques: ['DEXTERITE', 'SAGESSE'],
     voies: [
       'chasseur-de-prime',
-      'maitre-des-bêtes',
-      'tireur-embusqué',
-      'marcheur-sylvestre',
       'éclaireur-implacable',
+      'maitre-des-bêtes',
+      'marcheur-sylvestre',
+      'tireur-embusqué',
     ], // Liste des slugs des voies associées à la classe
     image: '',
   },

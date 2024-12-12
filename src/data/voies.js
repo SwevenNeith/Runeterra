@@ -1,9 +1,21 @@
 export const voies = [
   {
+    slug: 'berserker',
+    name: 'Voie du Berserker',
+    description:
+      "Le Mercenaire entre dans une rage incontrôlable, augmentant considérablement ses dégâts au prix d'un contrôle réduit et d'une défense plus fragile.",
+  },
+  {
     slug: 'biologiste-mutagène',
     name: 'Voie du Biologiste Mutagène',
     description:
       'Manipulation des organismes vivants pour améliorer les capacités physiques ou créer des créatures mutantes.',
+  },
+  {
+    slug: 'briseur',
+    name: 'Voie du Briseur',
+    description:
+      "Ce Mercenaire tire sa puissance de sa connexion aux instincts primaires et aux environnements sauvages, utilisant des techniques brutales pour anéantir ses ennemis.",
   },
   {
     slug: 'catalyseur-d-éther',
@@ -28,6 +40,18 @@ export const voies = [
     name: "Voie de l'Eclaireur Implacable",
     description:
       "Le Traqueur excelle dans l'art de localiser et de poursuivre ses ennemis, même dans des conditions difficiles. Il utilise sa mapitrise du terrain et son intuition pour infliger des attaques précises et destabiliser ses adversaires.",
+  },
+  {
+    slug: 'fléau-des-batailles',
+    name: 'Voie du Fléau des Batailles',
+    description:
+      "Un expert des mêlées sanglantes, ce Mercenaire excelle à infliger des dégâts massifs dans des combats chaotiques tout en inspirant la terreur à ses ennemis.",
+  },
+  {
+    slug: 'frappeur-des-lignes',
+    name: 'Voie du Frappeur des Lignes',
+    description:
+      "Spécialisé dans le combat en formation, ce Mercenaire utilise sa force pour pénétrer les défenses ennemies et désorganiser leurs rangs.",
   },
   {
     slug: 'géomancien-élémentaire',
@@ -76,6 +100,12 @@ export const voies = [
     name: 'Voie du Physicien Energétique',
     description:
       'Exploitation des énergies pour produire des effets explosifs, défensifs ou perturbateurs.',
+  },
+  {
+    slug: 'ravageur',
+    name: 'Voie du Ravageur',
+    description:
+      "Un Mercenaire habitué aux combats mobiles et imprévisibles, frappant rapidement et esquivant les attaques ennemis grâce à son expérience des terrains variés.",
   },
   {
     slug: 'tireur-embusqué',

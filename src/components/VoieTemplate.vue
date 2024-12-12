@@ -136,7 +136,7 @@ strong {
 }
 
 /* Responsive adjustments */
-@media (max-width: 768px) {
+@media (max-width: 100%) {
   .voie-container {
     padding: 15px;
   }
