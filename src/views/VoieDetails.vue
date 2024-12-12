@@ -1,5 +1,8 @@
 <template>
   <div>
+    <!-- Breadcrumb pour navigation -->
+    <Breadcrumb :trail="breadcrumbTrail" />
+
     <!-- Affiche les détails de la voie -->
     <VoieTemplate
       v-if="voie"
@@ -14,17 +17,31 @@
 <script>
 import { voies } from '../data/voies.js'; // Import des données des voies
 import { competences } from '../data/competences.js'; // Import des compétences
-import VoieTemplate from '../components/VoieTemplate.vue'; // Import du component
+import VoieTemplate from '../components/VoieTemplate.vue'; // Import du composant
+import Breadcrumb from '../components/Breadcrumb.vue'; // Import du breadcrumb
 
 export default {
   components: {
     VoieTemplate,
+    Breadcrumb,
   },
   data() {
     return {
       voie: null, // Stocke les données de la voie courante
       competencesAssociees: [], // Stocke les compétences de la voie
     };
+  },
+  computed: {
+    // Génère le trail pour le breadcrumb
+    breadcrumbTrail() {
+      if (this.voie) {
+        return [
+          { label: 'Voies', to: '/voies' },
+          { label: this.voie.name, to: null }, // Page actuelle (sans lien)
+        ];
+      }
+      return [{ label: 'Voies', to: '/voies' }]; // Cas où la voie n'est pas trouvée
+    },
   },
   mounted() {
     // Récupère la voie en fonction du slug dans l'URL

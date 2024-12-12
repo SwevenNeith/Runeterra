@@ -1,5 +1,8 @@
 <template>
   <div>
+    <!-- Breadcrumb pour navigation -->
+    <Breadcrumb :trail="breadcrumbTrail" />
+
     <h1>Liste des voies</h1>
     <!-- Container pour la galerie -->
     <div class="gallery">
@@ -13,12 +16,24 @@
 
 <script>
 import { voies } from '../data/voies.js';
+import Breadcrumb from '../components/Breadcrumb.vue'; // Import du composant breadcrumb
 
 export default {
+  components: {
+    Breadcrumb,
+  },
   data() {
     return {
-      voies,
+      voies, // Liste des voies
     };
+  },
+  computed: {
+    // Trail pour le breadcrumb
+    breadcrumbTrail() {
+      return [
+        { label: 'Voies', to: null }, // Page actuelle (pas de lien)
+      ];
+    },
   },
 };
 </script>
