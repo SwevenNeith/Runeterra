@@ -156,7 +156,7 @@ export default {
 .classe-header {
   display: flex; /* Affiche les éléments en ligne côte à côte */
   flex-direction: row; /* Aligne les éléments horizontalement */
-  gap: 30px; /* Espacement entre l'image et le texte (ajustable en px) */
+  gap: 5px; /* Espacement entre l'image et le texte (ajustable en px) */
   margin-bottom: 20px; /* Marge sous le conteneur principal, ajustable en px */
 }
 
