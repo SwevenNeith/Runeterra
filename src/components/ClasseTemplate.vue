@@ -168,7 +168,7 @@ export default {
 
 /* Conteneur de l'image */
 .classe-image-container {
-  flex: 1 1 20%; /* Prend 40% de l'espace disponible */
+  flex: 1 1 20%; /* Prend 20% de l'espace disponible */
   max-width: 100%; /* L'image ne dépasse pas de son conteneur */
   height: auto; /* Hauteur ajustée automatiquement */
   position: relative; /* Nécessaire si vous voulez des effets de position */
@@ -290,7 +290,7 @@ li {
 .competence-details {
   display: flex;
   flex-wrap: wrap;
-  gap: 30px; /* Espacement entre les détails de compétence */
+  gap: 15px; /* Espacement entre les détails de compétence */
   margin-top: 20px; /* Marge au-dessus des détails */
 }
 
@@ -298,7 +298,7 @@ li {
   background-color: #f9f9f9;
   padding: 10px 20px;
   border-radius: 4px;
-  font-size: 16px; /* Taille de police fixe en px */
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1); /* Ombre douce autour des détails */
+  font-size: 15px; /* Taille de police fixe en px */
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5); /* Ombre douce autour des détails */
 }
 </style>
