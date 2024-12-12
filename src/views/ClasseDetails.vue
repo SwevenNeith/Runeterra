@@ -56,3 +56,63 @@ export default {
   },
 };
 </script>
+
+<style scoped>
+/* Styles pour la page de détails d'une classe */
+.classe-details {
+  background-color: #f4f4f9;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 1200px;
+  margin: 20px auto;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-size: 2rem;
+  color: #444;
+  margin-top: 30px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  background: #fff;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h3 {
+  color: #222;
+  font-size: 1.6rem;
+}
+
+p {
+  font-size: 1.1rem;
+  color: #555;
+}
+
+button {
+  padding: 10px 15px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+</style>
