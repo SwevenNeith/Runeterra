@@ -161,20 +161,12 @@ export default {
   display: flex;
   align-items: flex-start; /* Aligne l'image et le texte en haut */
   gap: 20px; /* Espace entre le texte et l'image */
-  margin-bottom: 20px; /* Espace avec le reste de la page */
-}
-
-.classe-text {
-  flex: 2; /* Donne plus d'espace au texte */
-}
-
-.classe-image {
-  flex: 1; /* Donne moins d'espace à l'image */
+  margin-bottom: 1%; /* Espace avec le reste de la page */
 }
 
 .classe-image img {
   /* Il va falloir faire attention à avoir l'ensemble des images de Classes sous le même format !!! */
-  width: 100%; /* L'image prend 100% de la largeur du conteneur */
+  width: 90%; /* L'image prend 100% de la largeur du conteneur */
   object-fit: contain;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
