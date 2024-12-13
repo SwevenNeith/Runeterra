@@ -58,7 +58,7 @@ export const competences = [
   },
   {
     slug: 'frappe-dans-l-ombre',
-    name: "FRappe dans l'Ombre",
+    name: "Frappe dans l'Ombre",
     description:
       "L'Assassin se cache dans les ombres et frappe avec une précision mortelle.",
     level: '1',
