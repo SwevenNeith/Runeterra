@@ -1,5 +1,10 @@
 export const voies = [
   {
+    slug: '',
+    name: 'Exemple',
+    description: '',
+  },
+  {
     slug: 'berserker',
     name: 'Voie du Berserker',
     description:
@@ -15,7 +20,7 @@ export const voies = [
     slug: 'briseur',
     name: 'Voie du Briseur',
     description:
-      "Ce Mercenaire tire sa puissance de sa connexion aux instincts primaires et aux environnements sauvages, utilisant des techniques brutales pour anéantir ses ennemis.",
+      'Ce Mercenaire tire sa puissance de sa connexion aux instincts primaires et aux environnements sauvages, utilisant des techniques brutales pour anéantir ses ennemis.',
   },
   {
     slug: 'catalyseur-d-éther',
@@ -25,7 +30,7 @@ export const voies = [
   },
   {
     slug: 'chasseur-de-prime',
-    name: "Voie du Chasseur de Prime",
+    name: 'Voie du Chasseur de Prime',
     description:
       "Le Traqueur se spécialise dans l'identification et la neutralisation rapide de cibles spécifiques.",
   },
@@ -36,22 +41,34 @@ export const voies = [
       'Spécialiste des poisons et des substances nocives pour affaiblir ou perturber les ennemis.',
   },
   {
+    slug: 'déchiqueteur',
+    name: 'Voie du Déchiqueteur',
+    description:
+      "L'Assassin adopte une approche plus brutale et violente, utilisant des attaques rapides et enchaînées pour submerger ses ennemis. Chaque coup ne laisse pas seulement des dégâts immédiats, mais aussi des blessures continues, affaiblissant progressivement la cible jusqu'à son élimination. Thématique : Dégâts continus, enchaînements rapides, effets de saignement.",
+  },
+  {
     slug: 'éclaireur-implacable',
     name: "Voie de l'Eclaireur Implacable",
     description:
       "Le Traqueur excelle dans l'art de localiser et de poursuivre ses ennemis, même dans des conditions difficiles. Il utilise sa mapitrise du terrain et son intuition pour infliger des attaques précises et destabiliser ses adversaires.",
   },
   {
+    slug: 'faucheur',
+    name: 'Voie du Faucheur',
+    description:
+      "L'Assassin se concentre sur les frappes critiques mortelles, exploitant les faiblesses vitales de ses ennemis pour infliger des dégâts massifs. Il récolte l'énergie de ses victimes, régénérant sa propre vie à chaque coup fatal porté. Thématique : Attaques critiques, vol de vie, élimination rapide.",
+  },
+  {
     slug: 'fléau-des-batailles',
     name: 'Voie du Fléau des Batailles',
     description:
-      "Un expert des mêlées sanglantes, ce Mercenaire excelle à infliger des dégâts massifs dans des combats chaotiques tout en inspirant la terreur à ses ennemis.",
+      'Un expert des mêlées sanglantes, ce Mercenaire excelle à infliger des dégâts massifs dans des combats chaotiques tout en inspirant la terreur à ses ennemis.',
   },
   {
     slug: 'frappeur-des-lignes',
     name: 'Voie du Frappeur des Lignes',
     description:
-      "Spécialisé dans le combat en formation, ce Mercenaire utilise sa force pour pénétrer les défenses ennemies et désorganiser leurs rangs.",
+      'Spécialisé dans le combat en formation, ce Mercenaire utilise sa force pour pénétrer les défenses ennemies et désorganiser leurs rangs.',
   },
   {
     slug: 'géomancien-élémentaire',
@@ -72,28 +89,46 @@ export const voies = [
       "Cette voie se concentre sur la création d'outils et de dispositifs chimiques innovants, combinant utilité, soutien et contrôle.",
   },
   {
+    slug: 'lames-silencieuses',
+    name: 'Voie des Lames Silencieuses',
+    description:
+      'Ce spécialiste des combats rapprochés utilise des lames cachées et des attaques rapides pour frapper à la fois avec agilité et puissance. Chaque coup porté est précis et dévastateur, conçu pour éliminer sa cible en quelques secondes. Thématique : Attaques rapides, dégâts critiques, précision létale.',
+  },
+  {
     slug: 'maitre-des-arcanes',
-    name: 'Voie du Maitre des Arcanes',
+    name: 'Voie du Maître des Arcanes',
     description:
       "L'Arcaniste excelle dans la magie pure et universelle, canalisant l'énergie arcanique brute pour infliger des dégâts directs ou se renforcer.",
   },
   {
     slug: 'maitre-des-bêtes',
-    name: "Voie du Maitre des Bêtes",
+    name: 'Voie du Maître des Bêtes',
     description:
       "Ce Traqueur entretient un lien profond avec la faune de Runeterra, combattant aux côtés d'animaux qu'il invoque ou apprivoise.",
   },
   {
+    slug: 'maitre-des-ombres',
+    name: 'Voie du Maître des Ombres',
+    description:
+      "Cet Assassin se spécialise dans l'art de la furtivité et des attaques surprises. Il exploite les ombres pour se dissimuler, attaquer avec précision et disparaître avant même que l'ennemi ne réalise ce qui vient de se passer. Thématique : Furtivité, mobilité, attaques invisibles.",
+  },
+  {
     slug: 'maitre-des-reflets',
-    name: 'Voie du Maitre des Reflets',
+    name: 'Voie du Maître des Reflets',
     description:
       "Spécialiste des illusions réalistes et lumineuses, l'Arcaniste utilise la lumière pour créer des attaques spectaculaires et renforcer ses alliés.",
   },
   {
     slug: 'marcheur-sylvestre',
-    name: "Voie du Marcheur Sylvestre",
+    name: 'Voie du Marcheur Sylvestre',
     description:
       "Le Traqueur tire sa force des environnements sauvages qu'il protège et traverse.",
+  },
+  {
+    slug: 'ombre',
+    name: "Voie de l'Ombre",
+    description:
+      "Cet Assassin se fond dans l'obscurité, devenant presque invisible aux yeux de ses ennemis. Il frappe avec précision à partir des ombres et se cache rapidement pour se protéger, rendant chaque attaque plus efficace et plus discrète. Thématique : Invisibilité, attaques furtives renforcées.",
   },
   {
     slug: 'physicien-énergétique',
@@ -105,13 +140,13 @@ export const voies = [
     slug: 'ravageur',
     name: 'Voie du Ravageur',
     description:
-      "Un Mercenaire habitué aux combats mobiles et imprévisibles, frappant rapidement et esquivant les attaques ennemis grâce à son expérience des terrains variés.",
+      'Un Mercenaire habitué aux combats mobiles et imprévisibles, frappant rapidement et esquivant les attaques ennemis grâce à son expérience des terrains variés.',
   },
   {
     slug: 'tireur-embusqué',
-    name: "Voie du Tireur Embusqué",
+    name: 'Voie du Tireur Embusqué',
     description:
-      "Expert en embuscade, le Traqueur utilise son environnement pour tendre des pièges et éliminer ses ennemis à distance.",
+      'Expert en embuscade, le Traqueur utilise son environnement pour tendre des pièges et éliminer ses ennemis à distance.',
   },
   {
     slug: 'transmutateur-visionnaire',

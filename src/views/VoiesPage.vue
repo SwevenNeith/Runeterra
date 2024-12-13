@@ -43,7 +43,7 @@ export default {
 .gallery {
   display: grid; /* Utilise Grid pour la disposition */
   grid-template-columns: repeat(4, 1fr); /* 4 colonnes de largeur égale */
-  gap: 1%; /* Espace entre les éléments */
+  gap: 2%; /* Espace entre les éléments */
   padding: 1%; /* Ajoute un peu d'espace autour de la galerie */
 
   /* Assure que la galerie est centrée sur la page */
@@ -59,11 +59,11 @@ export default {
   padding: 1%; /* Réduit le padding pour une taille plus compacte */
   border-radius: 8px; /* Réduit le rayon des coins */
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Ombre plus légère */
-  height: 50%; /* Augmente la hauteur des boîtes pour plus d'espace */
-  overflow: hidden; /* Cache le contenu qui dépasse si nécessaire */
   display: flex; /* Utilisation de Flexbox pour l'alignement */
   flex-direction: column; /* Aligne les éléments en colonne */
   padding: 8%; /* Ajoute un peu de padding pour aérer */
+  height: 100px; /* Hauteur uniforme de 200px pour chaque élément */
+  overflow: hidden; /* Cache le contenu qui dépasse si nécessaire */
 }
 
 /* Lien */
@@ -81,7 +81,7 @@ export default {
 
 /* Description */
 .gallery-item p {
-  text-align: justify; /* Aligne la description à gauche */
+  text-align: left; /* Aligne la description à gauche */
   font-size: 0.9rem; /* Réduit la taille du texte pour la description */
   margin: 0; /* Retirer les marges autour de la description */
   color: #555; /* Légère variation de couleur pour la description */
