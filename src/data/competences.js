@@ -57,6 +57,20 @@ export const competences = [
     voie: 'ravageur', // Correspond au slug de la voie
   },
   {
+    slug: 'frappe-dans-l-ombre',
+    name: "FRappe dans l'Ombre",
+    description:
+      "L'Assassin se cache dans les ombres et frappe avec une précision mortelle.",
+    level: '1',
+    damage: '1d6 DM',
+    alliés: '',
+    ennemis: "-1 CA jusqu'au prochain tour si la cible n'a pas encore agit",
+    sauvegarde: '',
+    range: '10 mètres',
+    duration: '',
+    voie: 'maitre-des-ombres', // Correspond au slug de la voie
+  },
+  {
     slug: 'griffes-primitives',
     name: 'Griffes Primitives',
     description:
@@ -140,6 +154,20 @@ export const competences = [
     range: '6 mètres',
     duration: "[1 + Mod d'INT] tours",
     voie: 'chimiste-toxique', // Correspond au slug de la voie
+  },
+  {
+    slug: 'lame-mortelle',
+    name: 'Lame Mortelle',
+    description:
+      "L'Assassin attaque une cible avec une rapidité dévastatrice pour infliger des dégâts critiques.",
+    level: '1',
+    damage: "1d6 DM + 1d4 DM si la cible n'a pas encore agit",
+    alliés: '',
+    ennemis: '',
+    sauvegarde: '',
+    range: 'Au contact',
+    duration: '',
+    voie: 'lames-silencieuses', // Correspond au slug de la voie
   },
   {
     slug: 'lame-tellurique',
@@ -462,6 +490,20 @@ export const competences = [
     voie: 'ravageur', // Correspond au slug de la voie
   },
   {
+    slug: 'évasion-fantomatique',
+    name: 'Evasion Fantomatique',
+    description:
+      "L'Assassin utilise son agilité pour se fondre dans l'ombre et devenir invisible.",
+    level: '2',
+    damage: '',
+    alliés: '',
+    ennemis: '',
+    sauvegarde: '',
+    range: '',
+    duration: '[1 + Mod de SAG] tours',
+    voie: 'maitre-des-ombres', // Correspond au slug de la voie
+  },
+  {
     slug: 'flèche-de-ronce',
     name: 'Flèche de Ronce',
     description:
@@ -489,6 +531,20 @@ export const competences = [
     range: '6 mètres',
     duration: '',
     voie: 'chasseur-de-prime', // Correspond au slug de la voie
+  },
+  {
+    slug: 'frappe-précise',
+    name: 'Frappe Précise',
+    description:
+      "L'Assassin frappe une cible avec une grande précision visant des points vitaux pour infliger des dégâts massifs.",
+    level: '2',
+    damage: '2d6 DM + 1d6 DM si la cible a moins de 50% PV',
+    alliés: '',
+    ennemis: '',
+    sauvegarde: '',
+    range: 'Au contact',
+    duration: '',
+    voie: 'lames-silencieuses', // Correspond au slug de la voie
   },
   {
     slug: 'gaz-suffocant',
@@ -619,6 +675,20 @@ export const competences = [
     voie: 'transmutateur-visionnaire', // Correspond au slug de la voie
   },
   {
+    slug: 'assassinat-soudain',
+    name: 'Assassinat Soudain',
+    description:
+      "L'Assassin frappe de manière dévastatrice depuis l'ombre, exploitant la surprise pour maximiser les dégâts.",
+    level: '3',
+    damage: '2d8 DM',
+    alliés: "Regagne 1d6 PV si l'attaque élimine la cible",
+    ennemis: '',
+    sauvegarde: '',
+    range: '8 mètres',
+    duration: '',
+    voie: 'maitre-des-ombres', // Correspond au slug de la voie
+  },
+  {
     slug: 'balayage-circulaire',
     name: 'Balayage Circulaire',
     description:
@@ -714,6 +784,21 @@ export const competences = [
     range: '6 mètres autour de lui',
     duration: '[1 + Mod de SAG] tours',
     voie: 'marcheur-sylvestre', // Correspond au slug de la voie
+  },
+  {
+    slug: 'maitrise-des-lames',
+    name: 'Maîtrise des Lames',
+    description:
+      "L'Assassin perfectionne ses techniques de combat, augmentant la rapidité et la brutalité de ses frappes.",
+    level: '3',
+    damage: '',
+    alliés:
+      "L'Assassin peut attaquer 2 fois par tours (sauf utilisation de compétences limitées) avec -1 aux jets d'attaque",
+    ennemis: '',
+    sauvegarde: '',
+    range: '',
+    duration: '[1 + Mod de DEX]',
+    voie: 'lames-silencieuses', // Correspond au slug de la voie
   },
   {
     slug: 'nuage-stimulant',
@@ -1015,6 +1100,20 @@ export const competences = [
     voie: 'berserker', // Correspond au slug de la voie
   },
   {
+    slug: 'frappe-invisible',
+    name: 'Frappe Invisible',
+    description:
+      "L'Assassin disparaît brièvement dans l'ombre avec d'apparaître soudainement pour frapper avec une grande force.",
+    level: '4',
+    damage: '3d6 DM',
+    alliés: 'Il devient invisible pendant 1 tour',
+    ennemis: '',
+    sauvegarde: '',
+    range: 'Au contact',
+    duration: '',
+    voie: 'lames-silencieuses', // Correspond au slug de la voie
+  },
+  {
     slug: 'générateur-d-interférence',
     name: "Générateur d'Interférence",
     description:
@@ -1057,6 +1156,20 @@ export const competences = [
     range: 'Une zone de 8 mètres de rayon à 3 mètres du Scientifique',
     duration: "[1 + Mod d'INT] tours",
     voie: 'biologiste-mutagène', // Correspond au slug de la voie
+  },
+  {
+    slug: 'ombre-envahissante',
+    name: 'Ombre Envahissante',
+    description:
+      "L'Assassin peut manipuler l'ombre pour englober une zone autour de lui, déstabilisant ses ennemis.",
+    level: '4',
+    damage: '3d6 DM',
+    alliés: '',
+    ennemis: '',
+    sauvegarde: "DEX ou -2 CA et aux jets d'attaques",
+    range: '6 mètres autour de lui',
+    duration: '',
+    voie: 'maitre-des-ombres', // Correspond au slug de la voie
   },
   {
     slug: 'onde-de-choc-instable',
@@ -1194,6 +1307,21 @@ export const competences = [
     voie: 'maitre-des-bêtes', // Correspond au slug de la voie
   },
   {
+    slug: 'assassin-parfait',
+    name: 'Assassin Parfait',
+    description:
+      "L'Assassin se déploie dans l'ombre avec une maîtrise totale, exécutant une série de frappes mortelles.",
+    level: '5',
+    damage: '4d8 DM',
+    alliés:
+      "L'Assassin peut se déplacer de 5 mètres après l'attaque. Si la cible meurt, l'Assassin peut relancer cette compétence au prochain tour (à condition de réussir l'attaque)",
+    ennemis: '',
+    sauvegarde: '',
+    range: '10 mètres',
+    duration: '',
+    voie: 'maitre-des-ombres', // Correspond au slug de la voie
+  },
+  {
     slug: 'avatar-de-la-bête',
     name: 'Avatar de la Bête',
     description:
@@ -1291,6 +1419,20 @@ export const competences = [
     range: "10 mètres pour l'entité",
     duration: '[2 + Mod de SAG] tours',
     voie: 'marcheur-sylvestre', // Correspond au slug de la voie
+  },
+  {
+    slug: 'exécution-silencieuse',
+    name: 'Exécution Silencieuse',
+    description:
+      "L'Assassin exécute une attaque parfaite et mortelle utilisant sa lame avec une précision fatale.",
+    level: '5',
+    damage: '4d8 DM',
+    alliés: "Si la cible est éliminée par l'attaque, l'Assassin regagne 2d6 PV",
+    ennemis: '',
+    sauvegarde: '',
+    range: 'Au contact',
+    duration: '',
+    voie: 'lames-silencieuses', // Correspond au slug de la voie
   },
   {
     slug: 'frappe-de-la-fureur',
