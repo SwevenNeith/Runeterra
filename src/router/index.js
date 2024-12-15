@@ -1,6 +1,7 @@
 // router.js
 import { createRouter, createWebHistory } from 'vue-router';
 import Home from '../views/Home.vue';
+import Map from '../views/Map.vue';
 import Jeu from '../views/Jeu.vue';
 import ClassePage from '../views/ClassePage.vue';
 import ClasseDetails from '../views/ClasseDetails.vue'; // Assure-toi que le chemin est correct
@@ -12,6 +13,12 @@ const routes = [
     name: 'Home',
     path: '/',
     component: Home,
+  },
+  { 
+    path: "/map", 
+    name: "Map", 
+    component: Map, 
+    meta: { noPadding: true } 
   },
   {
     name: 'Jeu',

@@ -3,6 +3,8 @@
     <nav class="links">
       <!-- Lien Accueil à gauche -->
       <router-link to="/" class="nav-link">Accueil</router-link>
+      <router-link to="/map" class="nav-link">Map</router-link>
+
 
       <!-- Menu déroulant pour "Classe" et "Voies" -->
       <div class="dropdown">
