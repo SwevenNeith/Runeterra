@@ -14,6 +14,20 @@ export const competences = [
   },
 
   {
+    slug: 'coup-vital',
+    name: 'Coup Vital',
+    description:
+      "L'Assassin vise un point faible pour infliger une blessure précise et efficace.",
+    level: '1',
+    damage: '1d8 DM + 1d4 DM si la cible est sous la moitié de ses PV',
+    alliés: '',
+    ennemis: '',
+    sauvegarde: '',
+    range: '5 mètres',
+    duration: '',
+    voie: 'faucheur', // Correspond au slug de la voie
+  },
+  {
     slug: 'explosion-arcanique',
     name: 'Explosion Arcanique',
     description:
@@ -461,6 +475,20 @@ export const competences = [
     voie: 'frappeur-des-lignes', // Correspond au slug de la voie
   },
   {
+    slug: 'drain-de-vie',
+    name: 'Drain de Vie',
+    description:
+      "L'Assassin utilise son habileté pour voler un fragment de l'énergie vitale de sa cible.",
+    level: '2',
+    damage: '2d6 DM',
+    alliés: "L'Assassin regagne 1d6 PV",
+    ennemis: '',
+    sauvegarde: '',
+    range: '',
+    duration: '',
+    voie: 'faucheur', // Correspond au slug de la voie
+  },
+  {
     slug: 'éclat-amplifié',
     name: 'Eclat Amplifié',
     description:
@@ -786,6 +814,21 @@ export const competences = [
     voie: 'marcheur-sylvestre', // Correspond au slug de la voie
   },
   {
+    slug: 'maitre-des-points-vitaux',
+    name: 'Maitre des Points Vitaux',
+    description:
+      "L'Assassin perfectionne son savoir-faire, maximisant l'efficacité de ses coups critiques.",
+    level: '3',
+    damage: '',
+    alliés:
+      "L' Assassin à +2 DEX et chaque coup critique inflige 1d6 DM supplémentaire",
+    ennemis: '',
+    sauvegarde: '',
+    range: '',
+    duration: '[1 + Mod de SAG] tours',
+    voie: 'faucheur', // Correspond au slug de la voie
+  },
+  {
     slug: 'maitrise-des-lames',
     name: 'Maîtrise des Lames',
     description:
@@ -1083,6 +1126,20 @@ export const competences = [
     range: "4 mètres autour d'un point visible",
     duration: '[1 + Mod de FOR] tours',
     voie: 'frappeur-des-lignes', // Correspond au slug de la voie
+  },
+  {
+    slug: 'frappe-fatale',
+    name: 'Frappe Fatale',
+    description:
+      "L'Assassin concentre toute sa force et sa précision dans une attaque conçue pour abattre un ennemi affaibli.",
+    level: '4',
+    damage: '2d8 DM',
+    alliés: '',
+    ennemis: '-2 DEX et -2 FOR si la cible a moins de 25% de PV',
+    sauvegarde: '',
+    range: 'Au contact',
+    duration: '2 tours',
+    voie: 'faucheur', // Correspond au slug de la voie
   },
   {
     slug: 'furie-inarrêtable',
@@ -1405,6 +1462,20 @@ export const competences = [
     range: 'Un cône de 6 mètres',
     duration: '[1 + Mod de FOR] tours',
     voie: 'frappeur-des-lignes', // Correspond au slug de la voie
+  },
+  {
+    slug: 'élimination-parfaite',
+    name: 'Elimination Parfaite',
+    description:
+      "L'Assassin exploite à la perfection les faiblesses de son adversaire, infligeant un coup fatal et drainant son énergie vitale.",
+    level: '5',
+    damage: '4d10 DM',
+    alliés: 'Regagne 3d8 PV si la cible est éliminée par cette attaque',
+    ennemis: '',
+    sauvegarde: '',
+    range: '8 mètres',
+    duration: '',
+    voie: 'faucheur', // Correspond au slug de la voie
   },
   {
     slug: 'esprit-sylvestre',
